@@ -1,0 +1,15 @@
+.search{
+    position: absolute;
+    left: 45%;
+    margin-left: -50px;
+}
+
+.searchCity{
+    width: 200px;
+    height: 25px;
+}
+
+.explain_text{
+    color: red;
+    margin-top: 10px;
+}

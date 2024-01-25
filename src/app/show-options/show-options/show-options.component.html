@@ -1,0 +1,6 @@
+<div *ngIf="options.length > 0">
+    <h3 *ngIf="text.length" class="title">{{text}}</h3>
+    <div class="options" *ngFor="let option of options" (click)="getOptions(option)">
+        {{ option }}
+    </div>
+</div>

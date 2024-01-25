@@ -1,0 +1,19 @@
+<main class="main">
+  <div class="search">
+    <h1>AutoComplete</h1>
+    <input
+    class="searchCity"
+    type="text"
+    [formControl]="value"
+    (click)="recentlyViewed()"
+    placeholder="Type to auto-complete"/>
+
+    <app-show-options [options]="options" (updatetOption)="updatetOption($event)"/>
+
+    <div class="explain_text" *ngIf="size < 2">You need to type at least 2 letters</div>
+
+    <app-show-options [options]="viewedOptions" [text]="'Recently Viewed'" (updatetOption)="updatetOption($event)"/>
+</div>
+</main>
+
+<router-outlet></router-outlet>
